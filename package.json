@@ -17,8 +17,15 @@
       "./extensions/brave-search/index.ts",
       "./extensions/guardrails/index.ts",
       "./extensions/sandbox/index.ts",
-      "./extensions/plan_mode.ts"
+      "./extensions/plan-mode.ts"
     ]
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^26.0.0",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "@anthropic-ai/sandbox-runtime": "^0.0.26"
   },
   "peerDependencies": {
     "@mariozechner/pi-coding-agent": "*",
