@@ -1,0 +1,29 @@
+{
+  "name": "@tomcreutz/pi_extensions",
+  "description": "Custom extensions and skills for pi coding agent",
+  "type": "module",
+  "keywords": [
+    "pi",
+    "pi-coding-agent",
+    "pi-package"
+  ],
+  "author": "tomcreutz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomcreutz/pi_extensions.git"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/brave-search/index.ts",
+      "./extensions/guardrails/index.ts",
+      "./extensions/sandbox/index.ts",
+      "./extensions/plan_mode.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  }
+}
